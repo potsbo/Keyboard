@@ -21,16 +21,16 @@ before_deploy:
   - make build
   - make dist
 
-deploy:
-  provider: releases
-  api_key:
-    secure: REPLACEME
-  skip_cleanup: true
-  file_glob: true
-  file: build/*.zip
-  on:
-    tags: true
-    repo: creasty/Keyboard
+# deploy:
+#   provider: releases
+#   api_key:
+#     secure: REPLACEME
+#   skip_cleanup: true
+#   file_glob: true
+#   file: build/*.zip
+#   on:
+#     tags: true
+#     repo: creasty/Keyboard
 
 notifications:
   email: false
